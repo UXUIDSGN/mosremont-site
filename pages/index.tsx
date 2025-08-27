@@ -1,21 +1,21 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Hero from '../components/Hero';
-import Services from '../components/Services';
-import Portfolio from '../components/Portfolio';
-import Reviews from '../components/Reviews';
-import CTA from '../components/CTA';
+import Link from "next/link";
 
-export default function Home() {
+export default function Header() {
   return (
-    <div className="bg-bgLight">
-      <Header />
-      <Hero />
-      <Services />
-      <Portfolio />
-      <Reviews />
-      <CTA />
-      <Footer />
-    </div>
-  )
+    <header className="bg-primary text-white shadow-md">
+      <div className="container mx-auto flex justify-between items-center p-6">
+        <h1 className="text-2xl font-bold">MosRemont</h1>
+        <nav>
+          <ul className="flex gap-6">
+            <li><Link href="/">Главная</Link></li>
+            <li><Link href="/about">О нас</Link></li>
+            <li><Link href="/services">Услуги</Link></li>
+            <li><Link href="/portfolio">Портфолио</Link></li>
+            <li><Link href="/contact">Контакты</Link></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 }
+

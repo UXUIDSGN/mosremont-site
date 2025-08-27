@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Кастомные стили */
+body {
+  background-color: #E5E3E4;
+  font-family: sans-serif;
+}
